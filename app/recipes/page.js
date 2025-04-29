@@ -133,12 +133,12 @@ export default function RecipesPage() {
             )}
             <div className="recipeContent">
               <h2 className="recipeTitle">{r.title}</h2>
-              <p className="recipeText">🧂 {r.ingredients}</p>
-              <p className="recipeText">👨‍🍳 {r.steps}</p>
+              <p className="recipeText"> {r.ingredients}</p>
+              <p className="recipeText"> {r.steps}</p>
 
               <div className="buttonGroup">
-                <button onClick={() => handleEdit(r)} className="editButton">✏️ แก้ไข</button>
-                <button onClick={() => handleDelete(r.id)} className="deleteButton">🗑️ ลบ</button>
+                <button onClick={() => handleEdit(r)} className="editButton">แก้ไข</button>
+                <button onClick={() => handleDelete(r.id)} className="deleteButton">ลบ</button>
               </div>
             </div>
           </div>
